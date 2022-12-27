@@ -6,5 +6,5 @@ def index(request):
     # print(request)
     return HttpResponse('Hello world!')
 
-def test(request):
-    return HttpResponse('BIG web')
+def test(request, testid):
+    return HttpResponse(f'this text %{testid}')
