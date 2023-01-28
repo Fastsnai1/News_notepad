@@ -1,0 +1,26 @@
+﻿Команды в Django
+    1. django-admin — обращение к джанго
+    2. django-admin startproject name  — создаём проект с названием name 
+    3. python manage.py runserver — запускает сервер
+    4. python manage.py startapp name -создёт модуль(фича или например чат) с именем name
+    5. MVC = MTV
+        model = model
+        view - template
+        controller - view
+    6. в urls.py - храняться ссылки на страницы
+    7. если мы хотим импортировать что то из нашей фичи удобно сделать mysite корневой папкой, щёлкни правой
+        кнопкой мыши по папке Mark directory as/sources root
+    8. from django.urls import include - в эту функцию передаёться список вложенных маршрутов, используеться
+        в urls.py
+    9. в models.py - создаються классы описывающие поля в базе данных они дожны быть подклассами от models
+    10. id - int
+        title - Varchar
+        content - Text
+        created_at - DateTime
+        update_at - DateTime
+        photo - Image
+        is_published - Boolean
+    11.  в типах полей в Джанго указываем какого вида значение будет в столбце
+        читай докум.
+
+
